@@ -1,0 +1,13 @@
+{
+  "name": "retraction-beacon",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "pytest -q",
+    "deploy": "node --env-file-if-exists=../.env --env-file-if-exists=.env scripts/deploy.mjs",
+    "smoke": "node --env-file-if-exists=../.env --env-file-if-exists=.env scripts/smoke.mjs"
+  },
+  "dependencies": {"genlayer-js":"2.0.0-rc.1"}
+}
+

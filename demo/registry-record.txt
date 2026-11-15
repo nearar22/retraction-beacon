@@ -1,0 +1,2 @@
+DEMO FIXTURE — NOT A REAL SCHOLARLY REGISTRY. Independent registry status: retracted for DOI 10.5555/rb-demo-2026. The registry links the exact title “Synthetic Catalyst Study for Contract Testing” and records 2026-11-15 as the effective date. This controlled fixture is not evidence about any real publication.
+
