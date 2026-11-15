@@ -61,3 +61,19 @@ The direct suite covers DOI normalization, duplicate IDs, URL boundaries, permis
 
 Deployment and live lifecycle evidence are added only after the exact reviewed source is deployed and exercised successfully.
 
+### Reviewed deployment
+
+- Contract: `0x2C22A0607655603E49EBe71e7d64857832fB1dDd`
+- Deployment transaction: `0x83c70a18ab6131fb82675480b5377b162975b5608a94024f0e53ec1852037229`
+- Reviewed source commit: `1f66276a1d8170d51514b5f40dbf51257eefd868`
+- Result: `FINISHED_WITH_RETURN` / `MAJORITY_AGREE`
+
+### Live lifecycle proof
+
+- Record: `retraction-mwifd0a2`
+- Create: `0x5c2320e01a601216c56e5b2c8b2346908028652df5a94ab5593837eccac822ee`
+- Intelligent refresh: `0xf042a87071aa20ac588a216229e24e0a716674d5884e68fc0d829e3648732098`
+- Archive: `0xf0b9a0377291a2cfe1eec4b0e5e4992248b270bc12a6d4ad614c931d2d75326f`
+- Final state: `ARCHIVED` / `RETRACTED` / `DO_NOT_CITE`
+- Archive receipt: `dc2e55c94edec41edadce355252af3e415024c3886034e2f22b8dfe1f2dc9639`
+
