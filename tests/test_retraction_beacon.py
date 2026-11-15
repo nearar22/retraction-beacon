@@ -88,7 +88,7 @@ def test_normalizer_accepts_numeric_string_and_binds_both_sources(direct_deploy)
     contract = direct_deploy(CONTRACT); instance = object.__getattribute__(contract, "_instance")
     normalize = sys.modules[instance.__class__.__module__]._normalize
     fetched = [{"source_index": 0, "url": PUB, "host": "publisher.example.org", "available": True, "content": "Publisher notice: DOI 10.5555/rb-demo-2026 is retracted effective 2026-11-15.", "sha256": "a" * 64}, {"source_index": 1, "url": REG, "host": "registry.example.net", "available": True, "content": "Independent registry status: retracted for DOI 10.5555/rb-demo-2026.", "sha256": "b" * 64}]
-    raw = {"status": "RETRACTED", "severity": "100", "doi_confirmed": True, "effective_date": "2026-11-15", "action": "DO_NOT_CITE", "summary": "Both frozen authorities identify the same DOI as retracted.", "evidence": [{"source_index": 0, "quote": "DOI 10.5555/rb-demo-2026 is retracted"}, {"source_index": 1, "quote": "registry status: retracted for DOI 10.5555/rb-demo-2026"}]}
+    raw = {"status": "RETRACTED", "severity": "100", "doi_confirmed": True, "effective_date": "2026-11-15", "action": "DO_NOT_CITE", "summary": "Both frozen authorities identify the same DOI as retracted.", "evidence": [{"source_index": 0, "quote": "“DOI 10.5555/rb-demo-2026 is retracted”"}, {"source_index": 1, "quote": "registry status: retracted for DOI 10.5555/rb-demo-2026"}]}
     assert normalize(raw, fetched)["severity"] == 100
 
 

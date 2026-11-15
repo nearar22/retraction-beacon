@@ -74,7 +74,7 @@ def _json(raw):
 
 
 def _quote_key(value):
-    return " ".join(str(value).casefold().split())
+    return " ".join(re.findall(r"[a-z0-9]+", str(value).casefold()))
 
 
 def _normalize(raw, fetched):
